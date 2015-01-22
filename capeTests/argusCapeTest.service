@@ -1,0 +1,9 @@
+[Unit]
+Description=Argus cape test service
+Before=ntp.service
+
+[Service]
+ExecStart=/usr/bin/argusCapeTest.py
+
+[Install]
+WantedBy=multi-user.target
